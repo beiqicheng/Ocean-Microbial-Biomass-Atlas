@@ -1,21 +1,33 @@
-# Ocean-Microbial-Biomass-Atlas
+# OMBA — Ocean Microbial Biomass Atlas
 
-OMBA (Ocean Microbial Biomass Atlas)
+A modular Streamlit platform for microbial biomass estimation and validation.
 
-Roadmap
+## Structure
 
-v0.1 Project Manager
+- Home / Project Manager
+- SSU Explorer
+- LSU Explorer
+- RNA Yield
+- Biomass
+- Microscopy
+- Quantitative Metagenome
+- Environment
+- Global Atlas
 
-v0.2 SSU Explorer
+## File formats
 
-v0.3 LSU Explorer
+`read_counts.txt`
+- Sample
+- SSU_hits
+- LSU_hits
 
-v0.4 RNA Yield
+`SSU_matrix.txt` and `LSU_matrix.txt`
+- Taxonomy
+- Length
+- Sample columns...
 
-v0.5 Biomass
-
-v0.6 Microscopy
-
-v0.7 Quantitative Metagenome
-
-v1.0 Global Biomass Atlas
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
